@@ -7,8 +7,8 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 
-data/
-artifacts/
+/data/
+/artifacts/
 
 .vscode/
 .DS_Store
