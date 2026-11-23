@@ -1,0 +1,109 @@
+{
+  "model": {
+    "accuracy": 0.8422,
+    "precision": 0.6173,
+    "recall": 0.6262,
+    "f1": 0.6217,
+    "roc_auc": 0.8319,
+    "pr_auc": 0.6583
+  },
+  "errors": {
+    "Month": [
+      {
+        "Month": "Dec",
+        "rows": 1706,
+        "purchase_rate": 0.1266,
+        "roc_auc": 0.9046,
+        "recall": 0.7685,
+        "precision": 0.5425
+      },
+      {
+        "Month": "Nov",
+        "rows": 2982,
+        "purchase_rate": 0.2549,
+        "roc_auc": 0.8079,
+        "recall": 0.5487,
+        "precision": 0.6715
+      },
+      {
+        "Month": "Oct",
+        "rows": 549,
+        "purchase_rate": 0.2095,
+        "roc_auc": 0.9033,
+        "recall": 0.8261,
+        "precision": 0.625
+      },
+      {
+        "Month": "Sep",
+        "rows": 448,
+        "purchase_rate": 0.192,
+        "roc_auc": 0.8373,
+        "recall": 0.686,
+        "precision": 0.513
+      }
+    ],
+    "VisitorType": [
+      {
+        "VisitorType": "New_Visitor",
+        "rows": 985,
+        "purchase_rate": 0.2629,
+        "roc_auc": 0.8613,
+        "recall": 0.6911,
+        "precision": 0.8647
+      },
+      {
+        "VisitorType": "Other",
+        "rows": 80,
+        "purchase_rate": 0.2,
+        "roc_auc": 0.96,
+        "recall": 0.875,
+        "precision": 0.875
+      },
+      {
+        "VisitorType": "Returning_Visitor",
+        "rows": 4620,
+        "purchase_rate": 0.1952,
+        "roc_auc": 0.817,
+        "recall": 0.6031,
+        "precision": 0.5602
+      }
+    ],
+    "Weekend": [
+      {
+        "Weekend": "0",
+        "rows": 4293,
+        "purchase_rate": 0.2041,
+        "roc_auc": 0.8349,
+        "recall": 0.6233,
+        "precision": 0.6169
+      },
+      {
+        "Weekend": "1",
+        "rows": 1392,
+        "purchase_rate": 0.2162,
+        "roc_auc": 0.8217,
+        "recall": 0.6346,
+        "precision": 0.6181
+      }
+    ]
+  },
+  "pagevalues_test": {
+    "with": {
+      "accuracy": 0.8422,
+      "precision": 0.6173,
+      "recall": 0.6262,
+      "f1": 0.6217,
+      "roc_auc": 0.8319,
+      "pr_auc": 0.6583
+    },
+    "without": {
+      "accuracy": 0.6162,
+      "precision": 0.2884,
+      "recall": 0.582,
+      "f1": 0.3857,
+      "roc_auc": 0.6624,
+      "pr_auc": 0.3215
+    },
+    "model_used": "xgboost"
+  }
+}

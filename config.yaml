@@ -1,0 +1,47 @@
+data:
+  raw_filename: online_shoppers_intention.csv
+  train_months: [Feb, Mar, May, June, Jul, Aug]   # the rest become the "later months" test set
+  seed: 42
+
+features:
+  drop: []                
+
+model:
+  version: v1
+  on_rerun: overwrite       # overwrite | new_version | fail
+  type: xgboost             # xgboost | logistic_regression
+  calibration: sigmoid         # isotonic | sigmoid | none  (sigmoid is safer on a small set)
+  calibration_months: [Jul, Aug]   # held out from training
+  params:
+    n_estimators: 300
+    max_depth: 4
+    learning_rate: 0.05
+
+training:
+  cv_folds: 5
+  class_weight: balanced
+
+
+business:
+  discount_cost: 300        
+  sale_value: 1200          
+  max_lift: 0.15           
+  lift_ramp_prob: 0.10      
+  show_cost: 30           
+
+decision:
+  manual_bands: null      
+
+explain:
+  enabled: true
+  top_k: 5
+
+drift:
+  psi_warn: 0.10
+  psi_alert: 0.25
+  cat_share_alert: 0.05     
+  min_batch_size: 200
+  ignore: [Month]          
+
+api:
+  log_level: info

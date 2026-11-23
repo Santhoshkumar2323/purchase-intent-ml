@@ -1,0 +1,94 @@
+{
+  "batch_rows": 5685,
+  "numeric": [
+    {
+      "feature": "Administrative",
+      "psi": 0.0365,
+      "status": "ok"
+    },
+    {
+      "feature": "Administrative_Duration",
+      "psi": 0.0372,
+      "status": "ok"
+    },
+    {
+      "feature": "Informational",
+      "psi": 0.0142,
+      "status": "ok"
+    },
+    {
+      "feature": "Informational_Duration",
+      "psi": 0.01,
+      "status": "ok"
+    },
+    {
+      "feature": "ProductRelated",
+      "psi": 0.0872,
+      "status": "ok"
+    },
+    {
+      "feature": "ProductRelated_Duration",
+      "psi": 0.0849,
+      "status": "ok"
+    },
+    {
+      "feature": "BounceRates",
+      "psi": 0.0604,
+      "status": "ok"
+    },
+    {
+      "feature": "ExitRates",
+      "psi": 0.0714,
+      "status": "ok"
+    },
+    {
+      "feature": "PageValues",
+      "psi": 0.0148,
+      "status": "ok"
+    },
+    {
+      "feature": "SpecialDay",
+      "psi": 1.3597,
+      "status": "alert"
+    },
+    {
+      "feature": "Weekend",
+      "psi": 0.0022,
+      "status": "ok"
+    }
+  ],
+  "categorical": [
+    {
+      "feature": "OperatingSystems",
+      "max_shift": 0.0407,
+      "category": "2",
+      "status": "ok"
+    },
+    {
+      "feature": "Browser",
+      "max_shift": 0.0222,
+      "category": "4",
+      "status": "ok"
+    },
+    {
+      "feature": "Region",
+      "max_shift": 0.0273,
+      "category": "9",
+      "status": "ok"
+    },
+    {
+      "feature": "TrafficType",
+      "max_shift": 0.1815,
+      "category": "2",
+      "status": "alert"
+    },
+    {
+      "feature": "VisitorType",
+      "max_shift": 0.0786,
+      "category": "Returning_Visitor",
+      "status": "alert"
+    }
+  ],
+  "flagged": 3,
+  "monitored": 16
+}

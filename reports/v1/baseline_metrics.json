@@ -1,0 +1,27 @@
+{
+  "split": {
+    "method": "month",
+    "train_rows": 6520,
+    "test_rows": 5685,
+    "train_purchase_rate": 0.1121,
+    "test_purchase_rate": 0.207
+  },
+  "models": {
+    "always_no_purchase": {
+      "accuracy": 0.793,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.207
+    },
+    "logistic_regression": {
+      "accuracy": 0.8478,
+      "precision": 0.632,
+      "recall": 0.6347,
+      "f1": 0.6333,
+      "roc_auc": 0.8364,
+      "pr_auc": 0.6202
+    }
+  }
+}
